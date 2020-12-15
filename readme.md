@@ -2,10 +2,12 @@
 
 I tried to build my own simple operating system from scratch, thanks to Osdev (https://wiki.osdev.org/Bare_Bones), with its thorough explanation, the instruction is very very clear and up to date, i can follow and able for the first time, after several attempts trying to develop an OS and always failed even to compile, this is my first OS from scratch that actually works and output something on a window.
 
-##How to build and Run
+## How to build and Run
 
+```
 ./build.sh
 qemu-system-i386 -kernel myos.bin
+```
 
 ## Why Windows Subsystem for Linux
 Because I have been using Windows for quite a number of years, I have tried using several Linux distros, but don't get the appeal, especially with the HiDPI display on my laptop, every Linux destroys fonts just very small.
