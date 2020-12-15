@@ -16,4 +16,4 @@ This code is built on WSL which is actually 100% pure Linux (probably), i am usi
 
 ## Thanks to
 - The OSDEV https://wiki.osdev.org/Bare_Bones
-- And i wrote a blog about it here https://techgalery.com
+- And i wrote a blog about it here https://www.techgalery.com/2020/12/how-to-build-simple-os-using-windows.html
