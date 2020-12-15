@@ -1,6 +1,6 @@
 # The SIMPLE KERNEL
 
-I tried to build my own simple operating system from scratch, thanks to Osdev (https://wiki.osdev.org/Bare_Bones), with its thorough explanation, the instruction is very very clear and up to date, i can follow and able for the first time, after several attempts trying to develop an OS and always failed even just to compile, this is my first OS from scratch that actually works and output something on a window.
+I tried to build my own simple operating system from scratch, well it's not quite an OS yet, OS is something that actually can do operation, connect with peripherals, etc, it's more like a how to do "Hello World" on low level. Thanks to Osdev (https://wiki.osdev.org/Bare_Bones), with its thorough explanation, the instruction is very very clear and up to date, i can follow and able for the first time, after several attempts trying to develop an OS and always failed even just to compile. This is my first OS from scratch that actually works and outputs something on a window.
 
 ## How to build and Run
 
