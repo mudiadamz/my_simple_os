@@ -1,21 +1,33 @@
 # The SIMPLE KERNEL
 
-I tried to build my own simple operating system from scratch, well it's not quite an OS yet, OS is something that actually can do operation, connect with peripherals, etc, it's more like a how to do "Hello World" on low level. Thanks to Osdev (https://wiki.osdev.org/Bare_Bones), with its thorough explanation, the instruction is very very clear and up to date, i can follow and able for the first time, after several attempts trying to develop an OS and always failed even just to compile. This is my first OS from scratch that actually works and outputs something on a window.
+I tried to build my own simple operating system from scratch, thanks to Osdev (https://wiki.osdev.org/Bare_Bones), with its thorough explanation, the instruction is very very clear and up to date, i can follow and able for the first time, after several attempts trying to develop an OS and always failed even just to compile, this is my first OS from scratch that actually works and output something on a window.
 
 ## How to build and Run
 
+* 1. Build and Run the OS binary
+
 ```
 ./build.sh
+# Copy myos.bin to your main Windows OS
+# Make sure you have Qemu on your Windows, then run
 qemu-system-i386 -kernel myos.bin
 ```
-**Important:** *Please read either from osdev or from my blog below to build the cross-compiler (i686-elf-as, i686-elf-gcc)*
 
-![alt text](https://1.bp.blogspot.com/-283FuRPTFdw/X9iVLBRPGTI/AAAAAAAAIAU/garfto64V4Mu_YdZqcXLAIcaZMO37qXqQCLcBGAsYHQ/w400-h264/qemu-simple-os.jpg)
+* 2. Run the cd rom version with Grub
+To build a cd rom version, which you can actually run on a real machine, you need to switch to the `cdrom` branch. To run on Qemu, do the same thing except run ISO format instead. And also you need to have grub utility.
+
+```
+sudo apt install xorriso grub-pc-bin
+./build.sh
+# Copy myos.iso to your main Windows OS
+# Make sure you have Qemu on your Windows, then run
+qemu-system-i386 -cdrom myos.iso
+```
 
 ## Why Windows Subsystem for Linux
-Because I have been using Windows for quite a number of years, I have tried using several Linux distros, but don't get the appeal, especially with the HiDPI display on my laptop, every Linux distros fonts are just very small. I prefer and support open source projects, but i just want my life a little easier, so I decided to stay on Windows.
+Because I have been using Windows for quite a number of years, I have tried using several Linux distros, but don't get the appeal, especially with the HiDPI display on my laptop, every Linux destroys fonts just very small.
 
-This code is built on WSL which is actually 100% pure Linux (probably), i am using windows as main computer because it's better, for text editing, etc. But for compilation it runs on WSL with Debian distro installed.
+This code is built on WSL which is actually 100% pure Linux (probably), i am using windows as main computer because it's better, for text editing, etc. But for compilation it runs on WSL Debian.
 
 ## Thanks to
 - The OSDEV https://wiki.osdev.org/Bare_Bones
