@@ -4,9 +4,24 @@ I tried to build my own simple operating system from scratch, thanks to Osdev (h
 
 ## How to build and Run
 
+* 1. Build and Run the OS binary
+
 ```
 ./build.sh
+# Copy myos.bin to your main Windows OS
+# Make sure you have Qemu on your Windows, then run
 qemu-system-i386 -kernel myos.bin
+```
+
+* 2. Run the cd rom version with Grub
+To build a cd rom version, which you can actually run on a real machine, you need to switch to the `cdrom` branch. To run on Qemu, do the same thing except run ISO format instead. And also you need to have grub utility.
+
+```
+sudo apt install xorriso grub-pc-bin
+./build.sh
+# Copy myos.iso to your main Windows OS
+# Make sure you have Qemu on your Windows, then run
+qemu-system-i386 -cdrom myos.iso
 ```
 
 ## Why Windows Subsystem for Linux
