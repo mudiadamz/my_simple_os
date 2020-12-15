@@ -4,7 +4,7 @@ I tried to build my own simple operating system from scratch, thanks to Osdev (h
 
 ## How to build and Run
 
-* 1. Build and Run the OS binary
+1. Build and Run the OS binary
 
 ```
 ./build.sh
@@ -13,8 +13,8 @@ I tried to build my own simple operating system from scratch, thanks to Osdev (h
 qemu-system-i386 -kernel myos.bin
 ```
 
-* 2. Run the cd rom version with Grub
-To build a cd rom version, which you can actually run on a real machine, you need to switch to the `cdrom` branch. To run on Qemu, do the same thing except run ISO format instead. And also you need to have grub utility.
+2. Run the cd rom version with Grub
+To build a cd rom version, which you can actually run on a real machine (but don't it may erase your data!). To build cd rom format, first switch to the `cdrom` branch, then run the `build.sh`. To run on Qemu, do the same thing except run ISO format instead. And also you need to have grub utility on your WSL disto.
 
 ```
 sudo apt install xorriso grub-pc-bin
