@@ -8,6 +8,7 @@ I tried to build my own simple operating system from scratch, well it's not quit
 ./build.sh
 qemu-system-i386 -kernel myos.bin
 ```
+**Important:** - *Please read either from osdev or from my blog below to build the cross-compiler (i686-elf-as, i686-elf-gcc)*
 
 ## Why Windows Subsystem for Linux
 Because I have been using Windows for quite a number of years, I have tried using several Linux distros, but don't get the appeal, especially with the HiDPI display on my laptop, every Linux distros fonts just very small. I prefer and support open source project, but i just want my life a little easier, so I decide to stay on Windows.
