@@ -13,7 +13,7 @@ qemu-system-i386 -kernel myos.bin
 ![alt text](https://1.bp.blogspot.com/-283FuRPTFdw/X9iVLBRPGTI/AAAAAAAAIAU/garfto64V4Mu_YdZqcXLAIcaZMO37qXqQCLcBGAsYHQ/w400-h264/qemu-simple-os.jpg)
 
 ## Why Windows Subsystem for Linux
-Because I have been using Windows for quite a number of years, I have tried using several Linux distros, but don't get the appeal, especially with the HiDPI display on my laptop, every Linux distros fonts just very small. I prefer and support open source project, but i just want my life a little easier, so I decide to stay on Windows.
+Because I have been using Windows for quite a number of years, I have tried using several Linux distros, but don't get the appeal, especially with the HiDPI display on my laptop, every Linux distros fonts are just very small. I prefer and support open source projects, but i just want my life a little easier, so I decided to stay on Windows.
 
 This code is built on WSL which is actually 100% pure Linux (probably), i am using windows as main computer because it's better, for text editing, etc. But for compilation it runs on WSL with Debian distro installed.
 
